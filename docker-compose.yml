@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  USSDiscovery:
+    image: USSDiscovery.API
+    build:
+      context: .
+    ports:
+      - "5000:80"
+    networks:
+      - star
