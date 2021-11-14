@@ -9,10 +9,10 @@
         {
         }
 
-        public Planeta(string nome, decimal Tamanho)
+        public Planeta(string nome, decimal tamanho)
         {
             Nome = nome;
-            Tamanho = Tamanho;
+            Tamanho = tamanho;
             CalcularDimensao();
         }
 

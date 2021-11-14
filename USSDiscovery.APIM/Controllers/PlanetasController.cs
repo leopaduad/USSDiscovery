@@ -1,4 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using USSDiscovery.Application.Interfaces;
 using USSDiscovery.Application.Services;
 using USSDiscovery.Domain;
@@ -6,8 +11,8 @@ using USSDiscovery.Domain.Interfaces;
 
 namespace USSDiscovery.API.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class PlanetasController : ControllerBase
     {
         private readonly IPlanetaRepository _planeta;

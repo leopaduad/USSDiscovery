@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using USSDiscovery.Infra.Data.Context;
 
 namespace USSDiscovery.Infra.Data.Migrations
 {
     [DbContext(typeof(USSDiscoveryContext))]
-    partial class USSDiscoveryContextModelSnapshot : ModelSnapshot
+    [Migration("20211106170913_AcertosNome")]
+    partial class AcertosNome
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

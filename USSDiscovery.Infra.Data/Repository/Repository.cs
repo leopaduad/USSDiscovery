@@ -19,7 +19,7 @@ namespace USSDiscovery.Infra.Data.Repository
         public void Add(TEntity obj)
         {
             DbSet.Add(obj);
-            SaveChanges();
+            var s = SaveChanges();
         }
         public IQueryable<TEntity> GetAll()
         {
